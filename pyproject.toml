@@ -1,0 +1,20 @@
+[project]
+name = "supervisor"
+version = "0.1.0"
+description = "LangGraph-based supervisor agent with depth-aware planning and execution."
+requires-python = ">=3.10"
+dependencies = [
+    "langchain>=0.2.0",
+    "langchain-community>=0.2.0",
+    "langchain-openai>=0.1.0",
+    "langgraph>=0.1.14",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.0.3",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+supervisor-agent = "supervisor_agent.main:main"
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
